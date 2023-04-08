@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.pictures img {
+    width: 100%;
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    column-width: 33%;
+    padding: 0 12px;
+}
+
+.pictures {
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.pictures:hover {
+    filter: opacity(0.7);
+}
+
+.modalOpen {
+    visibility: visible;
+    transform: scale(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    background-color: #313030;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.ModalApp {
+    position: relative;
+}
+
+.cross {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+.modal {
+    visibility: hidden;
+    position: fixed;
+    overflow: hidden;
+}
